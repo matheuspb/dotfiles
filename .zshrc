@@ -11,6 +11,12 @@ compinit
 source\
 	/usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+bindkey "\e[A" history-search-backward
+bindkey "\e[B" history-search-forward
+bindkey "\eOA" history-search-backward
+bindkey "\eOB" history-search-forward
+setopt share_history
+
 export PROMPT="%1~ %# "
 export EDITOR=vim
 
